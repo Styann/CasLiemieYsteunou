@@ -89,7 +89,7 @@ class Recognizer:
             cv2.imshow("capture", frame)
         capture.release()
         cv2.destroyAllWindows()
-        return True if (faceCount >= 5) else False
+        return True if (faceCount >= 30) else False
         
     def TakePictures(self, directory:str, picturesNumber:int=30):
         path = self.PICTURES_FACES_PATH+directory
